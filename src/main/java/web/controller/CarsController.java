@@ -13,7 +13,7 @@ import web.service.CarServiceImpl;
 @Controller
 public class CarsController {
     @Autowired
-    private CarServiceImpl carService;
+    private CarService carService;
 
     @GetMapping(value = "/cars")
     public String printCars(@RequestParam(defaultValue = "5") Integer count, ModelMap model) {
