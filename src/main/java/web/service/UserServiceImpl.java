@@ -12,11 +12,11 @@ public class UserServiceImpl implements UserService {
      List<User> userList = new ArrayList<>();
 
     {
-        userList.add(new User("Olga", "Titiva", "tito@mail.ru"));
-        userList.add(new User("Nadejda", "Moskvina", "mosk@mail.ru"));
-        userList.add(new User("Leonid", "Nulevoy", "nolik@mail.ru"));
+        userList.add(new User("Ольга", "Титова", "tito@mail.ru"));
+        userList.add(new User("Надежда", "Москвина", "mosk@mail.ru"));
+        userList.add(new User("Леонид", "Нулевой", "nolik@mail.ru"));
         userList.add(new User("Руслан", "Русских", "rus@mail.ru"));
-        userList.add(new User("Stepan", "Petroff", "blue@mail.ru"));
+        userList.add(new User("Степан", "Петров", "blue@mail.ru"));
     }
 
     @Override
