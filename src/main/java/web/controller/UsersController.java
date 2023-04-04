@@ -16,6 +16,6 @@ public class UsersController {
     @GetMapping(value = "/users")
     public String printCars(@RequestParam(defaultValue = "5") Integer count, ModelMap model) {
         model.addAttribute("users", userService.getUsers(count));
-        return "users";
+        return "index";
     }
 }

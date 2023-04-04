@@ -19,10 +19,10 @@
         <th>email</th>
     </tr>
     <tr>
-    <tr th:each="car : ${cars}">
-        <td th:utext="${car.getModel()}"></td>
-        <td th:utext="${car.getSeries()}"></td>
-        <td th:utext="${car.getColor()}"></td>
+    <tr th:each="user : ${users}">
+        <td th:utext="${user.getFirstName()}"></td>
+        <td th:utext="${user.getLastName()}"></td>
+        <td th:utext="${user.getEmail()}"></td>
     </tr>
 </table>
 </body>
