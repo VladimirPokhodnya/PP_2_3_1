@@ -11,5 +11,19 @@
         <h1 th:text="${msg}"></h1>
     </th:block>
 </div>
+<h1>Table Users</h1>
+<table border="1" width="900" style="border-collapse:collapse;">
+    <tr>
+        <th>first name</th>
+        <th>last name</th>
+        <th>email</th>
+    </tr>
+    <tr>
+    <tr th:each="car : ${cars}">
+        <td th:utext="${car.getModel()}"></td>
+        <td th:utext="${car.getSeries()}"></td>
+        <td th:utext="${car.getColor()}"></td>
+    </tr>
+</table>
 </body>
 </html>

@@ -2,21 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Cars</title>
+    <title>Users</title>
 </head>
 <body>
-<h1>Table Cars</h1>
-<table>
+<h1>Table Users</h1>
+<table border="1" width="900" style="border-collapse:collapse;">
     <tr>
-        <th>Model</th>
-        <th>Series</th>
-        <th>Year</th>
+        <th>first name</th>
+        <th>last name</th>
+        <th>email</th>
     </tr>
     <tr>
-    <tr th:each="car : ${cars}">
-        <td th:utext="${car.getModel()}"></td>
-        <td th:utext="${car.getSeries()}"></td>
-        <td th:utext="${car.getColor()}"></td>
+    <tr th:each="user : ${users}">
+        <td th:utext="${user.getFirstName()}"></td>
+        <td th:utext="${user.getLastName()}"></td>
+        <td th:utext="${user.getEmail()}"></td>
     </tr>
 </table>
 </body>
